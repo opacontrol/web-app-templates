@@ -22,5 +22,16 @@ router.get('/templates', function(req, res, next) {
 	res.send(obj);
 });
 
+router.get('/templates/restaurant', function(req, res, next) {
+	var dir = path.join(__dirname, "../../json");
+	var template_path = path.join(dir, "templates.json");
+
+	var tmp = fs.readFileSync(template_path, 'utf8');
+
+	var obj = JSON.parse(tmp);
+
+	res.send(obj.tp_restaurant);
+});
+
 
 module.exports = router;
