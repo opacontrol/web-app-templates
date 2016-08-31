@@ -1,0 +1,13 @@
+{
+    "tp_portfolio": {},
+    "tp_restaurant": {},
+    "tp_news_feed": {},
+    "tp_selling": {}
+}
+
+// Template
+// {
+// 	"name": "Name good format",
+// 	"headers": [],
+// 	"footers": []
+// }
